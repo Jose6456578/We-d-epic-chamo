@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparte tu Código</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CodeShare 🚀</h1>
+        <p>Un lugar para que los desarrolladores compartan su código.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="code-input-container">
+                <h2>Crea una nueva publicación</h2>
+                <input type="text" id="code-title" placeholder="Título del snippet..." required>
+                <select id="language-select">
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="csharp">C#</option>
+                </select>
+                <textarea id="code-input" rows="10" placeholder="Pega tu código aquí..."></textarea>
+                <button id="share-btn">Compartir Código</button>
+            </div>
+
+            <hr>
+
+            <div class="code-display-container">
+                <h2>Snippets Recientes</h2>
+                <div id="code-feed">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CodeShare - Creado para la comunidad.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
